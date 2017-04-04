@@ -182,7 +182,7 @@ public class EventExample implements IEventIpc
 
 ### Additional Samples
 
-A set of more complex exmaples can be found in this repo's samples folders: *App 1* and *App 2*.
+A set of more complex exmaples can be found in this repo's samples folders: **App 1** and **App 2**.
 
 
 ---
