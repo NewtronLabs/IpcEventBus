@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/NewtronLabsTheme.MainFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_basic"
+        android:gravity="center"
+        android:text="@string/app_info_header" />
+
+    <TextView
+        style="@style/NewtronLabsTheme.SecondaryFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_horizontal_basic"
+        android:layout_marginRight="@dimen/margin_horizontal_basic"
+        android:gravity="center"
+        android:text="@string/app_info_content" />
+
+    <TextView
+        style="@style/NewtronLabsTheme.MainFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical_basic"
+        android:gravity="center"
+        android:text="@string/received" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NewtronLabsTheme.MainFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received_event"
+            android:theme="@style/NewtronLabsTheme.SecondaryFont" />
+
+        <TextView
+            android:id="@+id/received_event"
+            style="@style/NewtronLabsTheme.MainFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NewtronLabsTheme.MainFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received_data"
+            android:theme="@style/NewtronLabsTheme.SecondaryFont" />
+
+        <TextView
+            android:id="@+id/received_data"
+            style="@style/NewtronLabsTheme.MainFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/post_event_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_horizontal_basic"
+        android:layout_marginRight="@dimen/margin_horizontal_basic"
+        android:layout_marginTop="@dimen/margin_vertical_basic"
+        android:text="@string/post_event"
+        android:theme="@style/ButtonColor" />
+
+</LinearLayout>

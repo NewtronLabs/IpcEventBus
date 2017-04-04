@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IPC EventBus - App 2</string>
+    <string name="app_info_header">About</string>
+    <string name="app_info_content">This app receives events</string>
+    <string name="received">Received</string>
+    <string name="received_data">Data: </string>
+    <string name="received_event">Event: </string>
+    <string name="post_event">Post Back</string>
+
+</resources>
