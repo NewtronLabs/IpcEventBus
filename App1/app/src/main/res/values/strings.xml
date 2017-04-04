@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IPC EventBus - App 1</string>
+    <string name="app_info_header">About</string>
+    <string name="app_info_content">Faster than Intents and easier than AIDLs.
+        The Newtron Labs IPC EventBus is an Android library for posting events between
+        processes or different apps.
+    </string>
+    <string name="post_event">Post Event</string>
+    <string name="received">Received Postback</string>
+    <string name="received_data">Received data: </string>
+    <string name="received_event">Received event: </string>
+
+</resources>
