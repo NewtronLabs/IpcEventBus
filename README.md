@@ -66,7 +66,7 @@ public class Listener implements IIpcEventBusConnectionListener, IIpcEventBusObs
 ### Step 3
 
 ```java
-IpcEventBus.getInstance().postEvent(event);
+IpcEventBus.getInstance().postEvent(new MyEvent());
 ```
 
 ### Step 4
