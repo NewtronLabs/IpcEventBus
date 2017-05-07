@@ -3,7 +3,7 @@
 Faster than `Intents` and easier than `AIDLs`. IPC EventBus is an Android library for sending events between processes or different apps.
 
 <p align="center">
-  <img src="https://github.com/NewtronLabs/IpcEventBus/blob/master/IpcEventBus-Diagram.png" width="56%" height="56%" >
+  <img src="https://github.com/NewtronLabs/IpcEventBus/blob/master/Diagram.png" width="56%" height="56%" >
 </p>
 
 
@@ -27,7 +27,7 @@ allprojects {
 In the `build.gradle` for your app include:
 
 ```gradle
-compile 'com.newtronlabs.ipceventbus:ipceventbus:4.4.0'
+compile 'com.newtronlabs.ipceventbus:ipceventbus:4.5.2'
 ```
 
 
@@ -196,7 +196,9 @@ A set of more complex exmaples can be found in this repo's samples folders: **Ap
 
 IPC EventBus binaries and source code can only be used in accordance with Freeware license. That is, freeware may be used without payment, but may not be modified. The developer of IPC EventBus retains all rights to change, alter, adapt, and/or distribute the software. IPC EventBus is not liable for any damages and/or losses incurred during the use of IPC EventBus.
 
-Users may not decompile, reverse engineer, pull apart, or otherwise attempt to dissect the source code, algorithm, technique or other information from the binary code of IPC EventBus unless it is authorized by existing applicable law and only to the extent authorized by such law. In the event that such a law applies, user may only attempt the foregoing if: (1) user has contacted Newtron Labs to request such information and Newtron Labs has failed to respond in a reasonable time, or (2) reverse engineering is strictly necessary to obtain such information and Newtron Labs has failed to reply. Any information obtained by user from Newtron Labs may be used only in accordance to the terms agreed upon by Newtron Labs and in adherence to Newtron Labs confidentiality policy. Such information supplied by Newtron Labs and received by user shall not be disclosed to a third party or used to create a software substantially similar to the technique or expression of the Newtron Labs IPC EventBus software.
+You may not decompile, reverse engineer, pull apart, or otherwise attempt to dissect the source code, algorithm, technique or other information from the binary code of IPC EventBus unless it is authorized by existing applicable law and only to the extent authorized by such law. In the event that such a law applies, user may only attempt the foregoing if: (1) user has contacted Newtron Labs to request such information and Newtron Labs has failed to respond in a reasonable time, or (2) reverse engineering is strictly necessary to obtain such information and Newtron Labs has failed to reply. Any information obtained by user from Newtron Labs may be used only in accordance to the terms agreed upon by Newtron Labs and in adherence to Newtron Labs confidentiality policy. Such information supplied by Newtron Labs and received by user shall not be disclosed to a third party or used to create a software substantially similar to the technique or expression of the Newtron Labs IPC EventBus software.
+
+You are solely responsible for determining the appropriateness of using IPC EventBus and assume any risks associated with Your use of IPC EventBus. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall Newtron Labs be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the IPC EventBus (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if Newtron Labs has been advised of the possibility of such damages. 
 
 *Patent Pending*
 
