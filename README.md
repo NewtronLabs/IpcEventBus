@@ -6,7 +6,6 @@ Faster than `Intents` and easier than `AIDLs`. IPC EventBus is an Android librar
   <img src="https://github.com/NewtronLabs/IpcEventBus/blob/master/Diagram.png" width="56%" height="56%" >
 </p>
 
-
 ---
 
 ## How to Use 
@@ -188,7 +187,6 @@ public class EventExample implements IEventIpc
 ### Additional Samples
 
 A set of more complex exmaples can be found in this repo's samples folders: **App 1** and **App 2**.
-
 
 ---
 
