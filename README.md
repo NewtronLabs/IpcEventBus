@@ -26,7 +26,7 @@ allprojects {
 In the `build.gradle` for your app include:
 
 ```gradle
-compile 'com.newtronlabs.ipceventbus:ipceventbus:4.5.2'
+compile 'com.newtronlabs.ipceventbus:ipceventbus:4.6.0'
 ```
 
 
