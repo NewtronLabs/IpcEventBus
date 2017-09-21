@@ -128,7 +128,6 @@ public class EventExample extends EventIpcSimple
         ParcelHelper.getInstance().writeToParcel(dest, flags, mData);
     }
 
-    @Override
     public IData getData()
     {
         return mData;
