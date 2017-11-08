@@ -15,6 +15,17 @@ Faster than `Intents` and easier than `AIDLs`. IPC EventBus is an Android librar
 Include the below dependency in your `build.gradle` project.
 
 ```gradle
+buildscript {
+    repositories {
+        jcenter()
+        maven { url "http://code.newtronlabs.com:8081/artifactory/libs-release-local" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath "com.newtronlabs.android:plugin:1.1.0"
+    }
+}
+
 allprojects {
     repositories {
         jcenter()
@@ -26,7 +37,11 @@ allprojects {
 In the `build.gradle` for your app include:
 
 ```gradle
-compile 'com.newtronlabs.ipceventbus:ipceventbus:4.6.0'
+apply plugin: 'com.newtronlabs.android'
+
+dependencies {
+    provided 'com.newtronlabs.ipceventbus:ipceventbus:5.0.0'
+}
 ```
 
 
