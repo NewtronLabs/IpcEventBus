@@ -42,7 +42,7 @@ In the `build.gradle` for your app include:
 
 ```gradle
 dependencies {
-    provided 'com.newtronlabs.ipceventbus:ipceventbus:5.0.0'
+    provided 'com.newtronlabs.ipceventbus:ipceventbus:5.1.0'
 }
 ```
 
