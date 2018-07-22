@@ -1,7 +1,3 @@
-Please take a few minutes and let us know how we are doing by filling out this survey: https://goo.gl/forms/97TYeG6Wx5CA4lBV2
-
----
-
 # IPC EventBus
 
 Faster than `Intents` and easier than `AIDLs`. IPC EventBus is an Android library for sending events between processes or different apps.
@@ -222,4 +218,4 @@ You are solely responsible for determining the appropriateness of using IPC Even
 
 ## Contact
 
-contact@newtronlabs.com
+solutions@newtronlabs.com
