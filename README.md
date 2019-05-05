@@ -52,10 +52,8 @@ dependencies {
 Implement `IIpcEventBusConnectionListener` and `IIpcEventBusObserver`.
 
 ```java
-public class Listener implements IIpcEventBusConnectionListener, IIpcEventBusObserver 
-{
-    public Listener() 
-    {
+public class Listener implements IIpcEventBusConnectionListener, IIpcEventBusObserver {
+    public Listener() {
         String targetApp = "com.packagename";
         
         IIpcEventBusConnector connector =
@@ -65,20 +63,17 @@ public class Listener implements IIpcEventBusConnectionListener, IIpcEventBusObs
     }
 
     @Override
-    public void onConnected(IIpcEventBusConnector connector) 
-    {
+    public void onConnected(IIpcEventBusConnector connector) {
         connector.registerObserver(this);
     }
 
     @Override
-    public void onEvent(IEventIpc event) 
-    {
+    public void onEvent(IEventIpc event) {
         Log.d("ipceventbus", "Received event: " + event.getClass().getSimpleName());
     }
 
     @Override
-    public void onDisconnected(IIpcEventBusConnector connector) 
-    {
+    public void onDisconnected(IIpcEventBusConnector connector) {
 
     }
 }
@@ -99,14 +94,12 @@ Create a module with all your events. Then share the module between the apps tha
 The easiest way to create an event is to make your event extend `EventIpcSimple` so that all the setup happens in that super class.
 
 ```java
-public class EventExample extends EventIpcSimple
-{
-    public EventExample()
-    {
+public class EventExample extends EventIpcSimple {
+
+    public EventExample() {
     }
 
-    EventExample(Parcel in)
-    {
+    EventExample(Parcel in) {
         readFromParcel(in);
     }
 }
@@ -117,36 +110,30 @@ public class EventExample extends EventIpcSimple
 Sometimes it you may which to pass data inside of an event for it to be received on another app. To do this you have to use the `ParcelHelper` class that will do all the heavy lifting for you. The example below shows this. It also shows that interface types are preserved accross IPC.
 
 ```java
-public class EventExample extends EventIpcSimple 
-{
+public class EventExample extends EventIpcSimple {
     private IData mData;
 
-    public EventExample(IData data)
-    {
+    public EventExample(IData data) {
         mData = data;
     }
 
-    EventExample(Parcel in)
-    {
+    EventExample(Parcel in) {
         readFromParcel(in);
     }
 
     @Override
-    public void readFromParcel(Parcel parcel)
-    {
+    public void readFromParcel(Parcel parcel) {
         // Must be done for every object in the event.
         mData = (IData) ParcelHelper.getInstance().createFromParcel(parcel, IData.class);
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int flags)
-    {
+    public void writeToParcel(Parcel dest, int flags) {
         // Must be done for every object in the event.
         ParcelHelper.getInstance().writeToParcel(dest, flags, mData);
     }
 
-    public IData getData()
-    {
+    public IData getData() {
         return mData;
     }
 }
@@ -157,45 +144,36 @@ public class EventExample extends EventIpcSimple
 Sometimes you don't want your event to extend `EventIpcSimple`. 
 
 ```java
-public class EventExample implements IEventIpc
-{
-    public EventExample()
-    {
+public class EventExample implements IEventIpc {
+    public EventExample() {
     }
 
-    EventExample(Parcel in)
-    {
+    EventExample(Parcel in) {
         readFromParcel(in);
     }
     
-    public static final Creator<EventExample> CREATOR = new Creator<EventExample>()
-    {
+    public static final Creator<EventExample> CREATOR = new Creator<EventExample>() {
         @Override
-        public EventExample createFromParcel(Parcel in)
-        {
+        public EventExample createFromParcel(Parcel in) {
             return new EventExample(in);
         }
 
         @Override
-        public EventExample[] newArray(int size)
-        {
+        public EventExample[] newArray(int size) {
             return new EventExample[size];
         }
     };
     
      @Override
-    public int describeContents()
-    {
+    public int describeContents() {
         return 0;
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int flags)
-    {        
+    public void writeToParcel(Parcel dest, int flags) {        
     }
 
-    public void readFromParcel(Parcel in)
-    {
+    public void readFromParcel(Parcel in) {
     }
 }
 ```
