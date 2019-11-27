@@ -21,8 +21,8 @@ buildscript {
         maven { url "http://code.newtronlabs.com:8081/artifactory/libs-release-local" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
-        classpath 'com.newtronlabs.android:plugin:2.0.4-alpha'
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.newtronlabs.android:plugin:3.0.0'
     }
 }
 
@@ -42,7 +42,7 @@ In the `build.gradle` for your app include:
 
 ```gradle
 dependencies {
-    compileOnly 'com.newtronlabs.ipceventbus:ipceventbus:5.2.1'
+    compileOnly 'com.newtronlabs.ipceventbus:ipceventbus:6.0.0'
 }
 ```
 
