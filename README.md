@@ -22,7 +22,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.2'
-        classpath 'com.newtronlabs.android:plugin:3.0.0'
+        classpath 'com.newtronlabs.android:plugin:4.0.0'
     }
 }
 
