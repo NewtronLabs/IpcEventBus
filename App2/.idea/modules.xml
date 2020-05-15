@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/App2.iml" filepath="$PROJECT_DIR$/App2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/App2-app.iml" filepath="$PROJECT_DIR$/app/App2-app.iml" group="App2/app" />
+      <module fileurl="file://$PROJECT_DIR$/events/App2-events.iml" filepath="$PROJECT_DIR$/events/App2-events.iml" group="App2/events" />
+      <module fileurl="file://$PROJECT_DIR$/IpcEventBus-App2.iml" filepath="$PROJECT_DIR$/IpcEventBus-App2.iml" group="App2" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/events/events.iml" filepath="$PROJECT_DIR$/events/events.iml" />
     </modules>
