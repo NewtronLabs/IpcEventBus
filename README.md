@@ -194,6 +194,19 @@ A set of more complex exmaples can be found in this repo's samples folders: **Ap
 
 ---
 
+## Support Us
+Please support the continued development of these libraries. We host and develop these libraries for free. Any support is deeply appriciated. Thank you!
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1rbY8qjxvWU8GQgaqDrOY4-fYOWobQKk3" width="200" height="200" title="Support us" alt="Support us">
+</p>
+
+<p align="center">
+  <strong>BTC Address:</strong> 39JmAfnNhaEPKz5wjQjQQj4jcv9BM11NQb
+</p>
+
+---
+
 ## License
 
 IPC EventBus binaries and source code can only be used in accordance with Freeware license. That is, freeware may be used without payment, but may not be modified. The developer of IPC EventBus retains all rights to change, alter, adapt, and/or distribute the software. IPC EventBus is not liable for any damages and/or losses incurred during the use of IPC EventBus.
