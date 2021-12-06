@@ -25,7 +25,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.android.tools.build:gradle:7.0.3'
         classpath 'com.newtronlabs.android:plugin:5.0.1-alpha01'
     }
 }
@@ -50,7 +50,7 @@ In the `build.gradle` for your app include:
 
 ```gradle
 dependencies {
-    compileOnly 'com.newtronlabs.ipceventbus:ipceventbus:6.0.1'
+    compileOnly 'com.newtronlabs.ipceventbus:ipceventbus:6.0.2-alpha01'
 }
 ```
 
