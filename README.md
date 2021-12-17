@@ -50,7 +50,7 @@ In the `build.gradle` for your app include:
 
 ```gradle
 dependencies {
-    compileOnly 'com.newtronlabs.ipceventbus:ipceventbus:6.0.2-alpha01'
+    compileOnly 'com.newtronlabs.ipceventbus:ipceventbus:6.0.2-alpha05'
 }
 ```
 
