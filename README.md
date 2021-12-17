@@ -18,11 +18,7 @@ Include the below dependency in your `build.gradle` project.
 buildscript {
     repositories {
         google()
-        maven { url "https://newtronlabs.jfrog.io/artifactory/libs-release-local"
-            metadataSources {
-                artifact()
-            }
-        }
+        maven { url "https://newtronlabs.jfrog.io/artifactory/libs-release-local" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.3'
