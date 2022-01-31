@@ -1,10 +1,12 @@
 package com.newtronlabs.ipceventbus.app2;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.newtronlabs.ipceventbus.connection.IIpcEventBusConnectionListener;
 import com.newtronlabs.ipceventbus.connection.connectors.IIpcEventBusConnector;
@@ -65,6 +67,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onEvent(IEventIpc event)
     {
+        Log.d("Newtron"," onEvent: " + event.getClass().getSimpleName());
         Runnable runnable = new UiRunnable(event, mEventTextView, mDataTextView);
         runOnUiThread(runnable);
     }
